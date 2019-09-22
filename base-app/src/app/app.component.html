@@ -1,33 +1,7 @@
-
-
-  <h1>
-    Welcome to {{ title }}!
+<h1>
+    Welcome to Dinamic two way data binding!
   </h1>
-  <!-- <p>{{ title }}</p>
-  <p><strong>{{ number }}</strong></p>
-  <p><strong>{{ arr }}</strong></p>
-  <p><strong>{{ obj.a }}</strong></p>
-  <p><strong>{{ obj.b.c }}</strong></p> -->
-
-  <!-- <img [src]="img" alt="logo">  -->
-  <button (click)="onClick()">Click me</button>
   
-<input 
-  type="text" 
-  (keyup.enter)="onInput($event)" 
-  (blur)="onBlur(myInput.value)"
-  #myInput
-  >
+<input type="text" [value]="title" (input)="onInput($event)">
 
-<p><strong>{{inputValue}}</strong></p>
-
-<hr>
-
-<app-post></app-post>
-
-<app-post2></app-post2>
-
-<hr>
-
-<app-post4></app-post4>
-
+<p>{{title}}</p>
