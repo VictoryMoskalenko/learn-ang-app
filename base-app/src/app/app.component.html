@@ -2,6 +2,6 @@
     Welcome to Dinamic two way data binding!
   </h1>
   
-<input type="text" [value]="title" (input)="onInput($event)">
+<input type="text" [(ngModel)]="title">
 
 <p>{{title}}</p>
