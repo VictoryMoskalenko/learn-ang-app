@@ -9,9 +9,17 @@
   <p><strong>{{ obj.a }}</strong></p>
   <p><strong>{{ obj.b.c }}</strong></p> -->
 
-  <img [src]="img" alt="logo"> 
+  <!-- <img [src]="img" alt="logo">  -->
+  <button (click)="onClick()">Click me</button>
   
+<input 
+  type="text" 
+  (keyup.enter)="onInput($event)" 
+  (blur)="onBlur(myInput.value)"
+  #myInput
+  >
 
+<p><strong>{{inputValue}}</strong></p>
 
 <hr>
 

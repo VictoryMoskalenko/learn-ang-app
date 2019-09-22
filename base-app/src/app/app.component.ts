@@ -13,13 +13,26 @@ export class AppComponent {
 
   obj = { a: 1, b: {c: 2} }
 
+  inputValue = '';
+
   // tslint:disable-next-line:max-line-length
-  img = 'https://banner2.kisspng.com/20180518/ptw/kisspng-react-logo-javascript-front-and-back-ends-user-int-5afef575942028.3034008315266584216067.jpg'
+  // img = 'https://banner2.kisspng.com/20180518/ptw/kisspng-react-logo-javascript-front-and-back-ends-user-int-5afef575942028.3034008315266584216067.jpg'
 
   constructor() {
-    setTimeout( () => {
-      console.log('Timeout is over');
-      this.img = 'https://angular.io/assets/images/logos/angular/angular.png' 
-    }, 5000)
+
   }
+
+  onInput(event: any) {
+    console.log('Event', event);
+    this.inputValue = (<HTMLInputElement>event.target).value
+  }
+
+  onBlur(str: string) {
+    this.inputValue = str
+  }
+
+  onClick() {
+    console.log('Click!')
+  }
+
 }
