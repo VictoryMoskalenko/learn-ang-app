@@ -4,7 +4,24 @@
 
 <button (click)="toggle = !toggle">Toggle</button>
 
- <p *ngIf="toggle; else blueP" class="red">
+<button (click)="toggle = 111">Set 111</button>
+
+<div [ngSwitch]="toggle">
+  <p *ngSwitchCase="true" class="red">
+      Bootstrap имеет некоторые предопределенные стили кнопок, 
+      каждый из которых имеет свою семантическую цель.
+  </p>
+  <p *ngSwitchCase="false" class="blue">
+      Пространство между контентом сеток получило карту Sass, 
+      так что теперь вы можете задать его ширину на каждом брейпкойнте.
+  </p>
+  <p *ngSwitchDefault>
+    Lorem ipsum.
+  </p>
+</div>
+
+
+ <!-- <p *ngIf="toggle; else blueP" class="red">
    Пространство между контентом сеток получило карту Sass, 
    так что теперь вы можете задать его ширину на каждом брейпкойнте.
   </p>
@@ -14,11 +31,7 @@
         Bootstrap имеет некоторые предопределенные стили кнопок, 
         каждый из которых имеет свою семантическую цель.
       </p> 
-  </ng-template>
-
- 
-
-
+  </ng-template> -->
 
 
  <!-- <button (click)="backgroundToggle = !backgroundToggle">Toggle</button>   -->
