@@ -2,8 +2,21 @@
     Welcome to Angular!
 </h1>
 
-<button (click)="backgroundToggle = !backgroundToggle">Toggle</button>
-  
+<button (click)="toggle = !toggle">Toggle</button>
+
+ <p *ngIf="toggle" class="red">
+   Пространство между контентом сеток получило карту Sass, 
+   так что теперь вы можете задать его ширину на каждом брейпкойнте.
+  </p>
+ <p *ngIf="!toggle" class="blue">
+    Bootstrap имеет некоторые предопределенные стили кнопок, 
+    каждый из которых имеет свою семантическую цель.
+ </p> 
+
+
+
+
+ <!-- <button (click)="backgroundToggle = !backgroundToggle">Toggle</button>   -->
 <!-- <div [ngStyle]="{
 
   width: '200px',
@@ -25,8 +38,8 @@
 
 </p> -->
 
-<p 
+<!-- <p 
 [class.blue]="!backgroundToggle"
 [class.red]="backgroundToggle"
 > Изменилась брейкпойнты медиа-запросов системы сеток 
-    и ширины контейнеров</p>
+    и ширины контейнеров</p> -->
