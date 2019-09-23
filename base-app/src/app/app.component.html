@@ -4,7 +4,8 @@
 
 <button (click)="backgroundToggle = !backgroundToggle">Toggle</button>
   
-<div [ngStyle]="{
+<!-- <div [ngStyle]="{
+
   width: '200px',
   height: '200px',
   borderRadius: '5px',
@@ -12,4 +13,20 @@
   background: backgroundToggle ? 'red' : 'blue'
 
 }">
-</div>
+</div> -->
+
+<!-- <p [ngClass]="{
+  red: backgroundToggle,
+  blue: !backgroundToggle
+}">
+  Изменилась брейкпойнты медиа-запросов системы сеток 
+  и ширины контейнеров, что учитывает новые ярусы сеток 
+  и дает колонкам возможность ровно разделиться
+
+</p> -->
+
+<p 
+[class.blue]="!backgroundToggle"
+[class.red]="backgroundToggle"
+> Изменилась брейкпойнты медиа-запросов системы сеток 
+    и ширины контейнеров</p>
