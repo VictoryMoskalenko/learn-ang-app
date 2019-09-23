@@ -2,13 +2,15 @@
     Welcome to Angular!
 </h1>
 
+<p>{{ now | date: 'long' | uppercase }}</p>
+
 <!-- <ul>
   <li *ngFor="let number of arr; let idx = index">
     {{ idx + 1 }} <strong>{{ number }}</strong>
   </li>
 </ul>   -->
 
-<ul style= "list-style: none">
+<!-- <ul style= "list-style: none">
   <li *ngFor="let post of objs">
     <p>{{post.title}} <b>{{post.author}}</b></p>
     <ul>
@@ -20,7 +22,7 @@
       </li>
     </ul>
   </li>
-</ul>
+</ul> -->
 
 <!-- <button (click)="toggle = !toggle">Toggle</button>
 
