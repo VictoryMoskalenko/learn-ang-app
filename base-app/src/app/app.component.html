@@ -4,14 +4,19 @@
 
 <button (click)="toggle = !toggle">Toggle</button>
 
- <p *ngIf="toggle" class="red">
+ <p *ngIf="toggle; else blueP" class="red">
    Пространство между контентом сеток получило карту Sass, 
    так что теперь вы можете задать его ширину на каждом брейпкойнте.
   </p>
- <p *ngIf="!toggle" class="blue">
-    Bootstrap имеет некоторые предопределенные стили кнопок, 
-    каждый из которых имеет свою семантическую цель.
- </p> 
+
+  <ng-template #blueP>
+    <p class="blue">
+        Bootstrap имеет некоторые предопределенные стили кнопок, 
+        каждый из которых имеет свою семантическую цель.
+      </p> 
+  </ng-template>
+
+ 
 
 
 
