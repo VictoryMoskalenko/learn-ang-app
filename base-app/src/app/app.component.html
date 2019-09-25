@@ -1,85 +1,11 @@
-<h1>
-    Welcome to Angular!
-</h1>
+<div class="container">
+    <h1>Angular Components</h1>
+    
+    <app-post-form></app-post-form>
 
-<p>{{ now | date: 'long' | uppercase }}</p>
+    <hr />
 
-<!-- <ul>
-  <li *ngFor="let number of arr; let idx = index">
-    {{ idx + 1 }} <strong>{{ number }}</strong>
-  </li>
-</ul>   -->
-
-<!-- <ul style= "list-style: none">
-  <li *ngFor="let post of objs">
-    <p>{{post.title}} <b>{{post.author}}</b></p>
-    <ul>
-      <li *ngFor="let comment of post.comments">
-        <div>
-          <small>{{comment.name}}</small>
-          <p>{{comment.text}}</p>
-        </div>
-      </li>
-    </ul>
-  </li>
-</ul> -->
-
-<!-- <button (click)="toggle = !toggle">Toggle</button>
-
-<button (click)="toggle = 111">Set 111</button>
-
-<div [ngSwitch]="toggle">
-  <p *ngSwitchCase="true" class="red">
-      Bootstrap имеет некоторые предопределенные стили кнопок, 
-      каждый из которых имеет свою семантическую цель.
-  </p>
-  <p *ngSwitchCase="false" class="blue">
-      Пространство между контентом сеток получило карту Sass, 
-      так что теперь вы можете задать его ширину на каждом брейпкойнте.
-  </p>
-  <p *ngSwitchDefault>
-    Lorem ipsum.
-  </p>
-</div> -->
+    <app-post></app-post>
+</div>
 
 
- <!-- <p *ngIf="toggle; else blueP" class="red">
-   Пространство между контентом сеток получило карту Sass, 
-   так что теперь вы можете задать его ширину на каждом брейпкойнте.
-  </p>
-
-  <ng-template #blueP>
-    <p class="blue">
-        Bootstrap имеет некоторые предопределенные стили кнопок, 
-        каждый из которых имеет свою семантическую цель.
-      </p> 
-  </ng-template> -->
-
-
- <!-- <button (click)="backgroundToggle = !backgroundToggle">Toggle</button>   -->
-<!-- <div [ngStyle]="{
-
-  width: '200px',
-  height: '200px',
-  borderRadius: '5px',
-  border: '1px solid #ccc',
-  background: backgroundToggle ? 'red' : 'blue'
-
-}">
-</div> -->
-
-<!-- <p [ngClass]="{
-  red: backgroundToggle,
-  blue: !backgroundToggle
-}">
-  Изменилась брейкпойнты медиа-запросов системы сеток 
-  и ширины контейнеров, что учитывает новые ярусы сеток 
-  и дает колонкам возможность ровно разделиться
-
-</p> -->
-
-<!-- <p 
-[class.blue]="!backgroundToggle"
-[class.red]="backgroundToggle"
-> Изменилась брейкпойнты медиа-запросов системы сеток 
-    и ширины контейнеров</p> -->
