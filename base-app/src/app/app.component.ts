@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 export interface Post {
-  title: string
-  text: string
-  id?: number
+  title: string;
+  text: string;
+  id?: number;
 }
 
 @Component({
@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
       }
 
 
-    }, 5000)
+    }, 5000);
   }
 
   updatePosts(post: Post) {
